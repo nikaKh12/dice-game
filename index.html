@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="message"></h1>
+      <div class="players">
+        <div id="player1">
+          <h1>
+            Score:
+            <span id="player1Scoreboard">0</span>
+          </h1>
+          <div id="player1Dice" class="dice active">-</div>
+          <span id="2x" class="doubleTxt hidden"><h3>2X</h3></span>
+        </div>
+        <div id="player2">
+          <h1>
+            Score:
+            <span id="player2Scoreboard">0</span>
+          </h1>
+          <div id="player2Dice" class="dice">-</div>
+          <span id="2x2" class="doubleTxt hidden"><h3>2X</h3></span>
+        </div>
+      </div>
+
+      <button id="rollBtn">Roll Dice 🎲</button>
+      <button id="resetBtn">Reset Game 🔁</button> <br />
+      <button id="dblOrNothing">Double or Nothing 💣</button>
+      <br />
+    </div>
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+  </body>
+</html>
